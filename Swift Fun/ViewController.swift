@@ -3,7 +3,7 @@
 //  Swift Fun
 //
 //  Created by Account1 on 14/06/2020.
-//  Copyright © 2020 Account1. All  reserved....... weitere Punkte dazugeführt
+//  Copyright © 2020 Account1. All  reserved....... weitere Punkte dazugeführt und nochmals etwas dazu getan
 //
 
 import UIKit
