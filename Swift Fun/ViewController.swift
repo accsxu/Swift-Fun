@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         buttonCount += 1
         
-        
+        print(buttonCount)
         
         view.backgroundColor = UIColor.red
         
