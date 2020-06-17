@@ -30,19 +30,47 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZo-Vv-NHY"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MA-Ra-7WV">
+                                <rect key="frame" x="157" y="379" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1Qy-Tl-VR8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAA-Ny-sYW">
+                                <rect key="frame" x="157" y="295" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yo6-zg-yqa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53V-LO-TH9">
+                                <rect key="frame" x="182.5" y="214" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5MA-Ra-7WV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7b7-4f-isO"/>
+                            <constraint firstItem="7a9-e2-VyM" firstAttribute="top" secondItem="5MA-Ra-7WV" secondAttribute="bottom" constant="24.5" id="8t1-o0-PIe"/>
                             <constraint firstItem="7a9-e2-VyM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Eoz-RT-2Ab"/>
+                            <constraint firstItem="5MA-Ra-7WV" firstAttribute="top" secondItem="UAA-Ny-sYW" secondAttribute="bottom" constant="50" id="H6g-kr-9kT"/>
                             <constraint firstItem="7a9-e2-VyM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JDt-rz-lMV"/>
+                            <constraint firstItem="UAA-Ny-sYW" firstAttribute="top" secondItem="53V-LO-TH9" secondAttribute="bottom" constant="50" id="ODe-RX-Olk"/>
+                            <constraint firstItem="UAA-Ny-sYW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S1m-Lh-9QM"/>
                             <constraint firstItem="jm1-cp-z3o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e4w-rj-0S4"/>
                             <constraint firstItem="jm1-cp-z3o" firstAttribute="top" secondItem="7a9-e2-VyM" secondAttribute="bottom" constant="10" id="euo-ql-e4I"/>
+                            <constraint firstItem="53V-LO-TH9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lY4-sP-o7A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="53V-LO-TH9" id="0xL-sg-ddd"/>
+                        <outlet property="bottomTextField" destination="5MA-Ra-7WV" id="m3L-vv-DOk"/>
                         <outlet property="myLabel" destination="7a9-e2-VyM" id="69g-JS-X4V"/>
+                        <outlet property="topTextField" destination="UAA-Ny-sYW" id="1D9-Jx-Ltv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
